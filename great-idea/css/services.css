@@ -154,6 +154,12 @@ hr#bottomhr {
 
 .services {
   margin-bottom: 30px;
+  width: 93%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-right: 15px;
 }
 
 /* INFO BOXES */
@@ -203,4 +209,25 @@ hr#bottomhr {
 	-o-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+}
+
+/* BOTTOM */
+
+.bottomcontainer {
+  display: flex;
+  justify-content: space-between;
+  margin-bottom: 100px;
+}
+
+.bottombox {
+  width: 43%;
+}
+
+#list {
+  list-style-type: square;
+  margin: 30px;
+}
+
+#list li {
+  padding: 5px;
 }

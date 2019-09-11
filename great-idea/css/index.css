@@ -80,7 +80,6 @@ h1 {
 
 h2 {
 	font-size: 16px;
-	font-family: 'Fredoka One', cursive;
 }
 
 hr#tophr {
@@ -92,6 +91,9 @@ hr#tophr {
 
 hr#bottomhr {
 	margin-top:0px;
+	margin-bottom: 30px;
+	border-top: 1px solid black;
+	width: 98%;
 }
 
 /* NAVIGATION */
@@ -169,4 +171,38 @@ hr#bottomhr {
 	-o-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;
 	transition: all 0.3s ease-in-out;
+}
+
+/* CONTENT */
+
+.info {
+	display: flex;
+	justify-content: space-between;
+}
+
+.feat-about {
+	width: 90%;
+	margin: 10px;
+	margin-bottom: 50px;
+}
+
+.serv-prod-vis {
+	width: 30%;
+	margin: 10px;
+	margin-top: 50px;
+	margin-bottom: 30px;
+}
+
+#mid-page {
+	width: 100%;
+}
+
+/* COPYRIGHT */
+
+#copyright {
+	font-size: 14px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-weight: bold;
 }

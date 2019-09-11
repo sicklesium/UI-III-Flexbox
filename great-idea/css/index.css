@@ -75,6 +75,7 @@ h1, h2, h3, h4, h5 {
 h1 {
 	font-size: 80px;
 	line-height: normal;
+	text-align: center;
 }
 
 h2 {
@@ -82,20 +83,20 @@ h2 {
 	font-family: 'Fredoka One', cursive;
 }
 
-hr {
+hr#tophr {
 	border-top: 1px solid black;
 	margin-top: 75px;
 	margin-bottom: 30px;
 	width: 98%;
 }
 
-hr.bothr {
+hr#bottomhr {
 	margin-top:0px;
 }
 
-/* HEADER */
+/* NAVIGATION */
 
-.header {
+.navigation {
 	display: flex;
 	justify-content: space-evenly;
 	margin-top: 30px;
@@ -124,6 +125,46 @@ hr.bothr {
 .nav_head a:hover {
 	background: darkgray;
 	color: white;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+/* HEADER */
+
+.titles {
+	display: flex;
+	justify-content: space-around;
+	align-items: center;
+	margin-top: 50px;
+}
+
+.header {
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	align-items: center;
+}
+
+#started a {
+	text-decoration: none;
+	color: black;
+	border: 1px solid black;
+	padding-top: 5px;
+	padding-bottom: 5px;
+	padding-left: 40px;
+	padding-right: 40px;
+	-moz-transition: all 0.3s ease-in-out;
+	-o-transition: all 0.3s ease-in-out;
+	-ms-transition: all 0.3s ease-in-out;
+	transition: all 0.3s ease-in-out;
+}
+
+#started a:hover {
+	color: white;
+	background-color: black;
+	border: 1px solid white;
 	-moz-transition: all 0.3s ease-in-out;
 	-o-transition: all 0.3s ease-in-out;
 	-ms-transition: all 0.3s ease-in-out;

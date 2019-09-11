@@ -81,7 +81,9 @@ h2 {
 }
 
 h3 {
-  font-size: 16px;
+  font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 hr#tophr {
@@ -90,10 +92,16 @@ hr#tophr {
 	width: 98%;
 }
 
+hr.middlehr {
+	border-top: 1px solid black;
+	width: 50%;
+	margin-top: 0px;
+}
+
 hr#bottomhr {
 	margin-top:0px;
 	margin-bottom: 30px;
-	border-top: 2px solid black;
+	border-top: 1px solid black;
 	width: 98%;
 }
 
@@ -146,13 +154,13 @@ hr#bottomhr {
 
 /* HEADER */
 
-#services-header-img {
+#features-header-img {
   margin-top: 30px;
   margin-bottom: 30px;
   width: 100%;
 }
 
-.services {
+.features {
   margin-bottom: 30px;
   width: 93%;
   display: flex;
@@ -162,59 +170,51 @@ hr#bottomhr {
   margin-right: 15px;
 }
 
-/* INFO BOXES */
+/* INFOBOXES */
 
 .infocontainer {
   display: flex;
   flex-wrap: wrap;
+	flex-direction: column;
   justify-content: space-around;
   align-items: space-between;
+	margin-bottom: 30px;
 }
 
-.infobox {
-  width: 45%;
+.infobox1 {
+  width: 100%;
   height: auto;
-  margin-bottom: 20px;
+  margin-bottom: 10px;
   padding: 20px;
-  background-color: #F4F3F4;
+	display: flex;
+	text-align: left;
+	flex-direction: column-reverse;
+	align-items: flex-Start;
+	justify-content: space-around;
+	background-color: #F4F3F4;
   border: 1px solid black;
+	border-radius: 5px;
 }
 
-.learnmore {
-  background-color: white;
-  color: black;
-  width: 140px;
-  height: 30px;
-  border: 1px solid black;
-  border-radius: 5px;
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 20px;
-  margin-left: 0px;
-  margin-bottom: 0px;
-  text-decoration: none;
-  font-size: 12px;
-  -moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-
-.learnmore:hover {
-  background-color: darkgray;
-  color: white;
-  border: 1px solid white;
-  -moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
+.infobox2 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  padding: 20px;
+	display: flex;
+	text-align: right;
+	flex-direction: column-reverse;
+	align-items: flex-end;
+	background-color: #F4F3F4;
+	border: 1px solid black;
+	border-radius: 5px;
 }
 
 /* BOTTOM */
 
 .bottomcontainer {
   display: flex;
+	flex-direction: row-reverse;
   justify-content: space-between;
   margin-bottom: 100px;
   width: 93%;
@@ -224,13 +224,4 @@ hr#bottomhr {
 
 .bottombox {
   width: 45%;
-}
-
-#list {
-  list-style-type: square;
-  margin: 30px;
-}
-
-#list li {
-  padding: 5px;
 }

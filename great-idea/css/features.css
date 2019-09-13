@@ -63,8 +63,6 @@ h1, h2, h3, h4, h5 {
     margin-bottom: 15px;
 }
 
-/* Copy and paste your work from yesterday here and start to refactor into flexbox */
-
 /* MAIN BODY/MISC */
 
 .container {
@@ -79,14 +77,25 @@ h1 {
 }
 
 h2 {
-	font-size: 16px;
+	font-size: 30px;
+}
+
+h3 {
+  font-size: 20px;
+	margin-top: 10px;
+	margin-bottom: 10px;
 }
 
 hr#tophr {
 	border-top: 1px solid black;
-	margin-top: 75px;
 	margin-bottom: 30px;
 	width: 98%;
+}
+
+hr.middlehr {
+	border-top: 1px solid black;
+	width: 50%;
+	margin-top: 0px;
 }
 
 hr#bottomhr {
@@ -94,6 +103,16 @@ hr#bottomhr {
 	margin-bottom: 30px;
 	border-top: 1px solid black;
 	width: 98%;
+}
+
+/* COPYRIGHT */
+
+#copyright {
+	font-size: 14px;
+	text-align: center;
+	margin-top: 20px;
+	margin-bottom: 20px;
+	font-weight: bold;
 }
 
 /* NAVIGATION */
@@ -135,74 +154,74 @@ hr#bottomhr {
 
 /* HEADER */
 
-.titles {
-	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	margin-top: 50px;
+#features-header-img {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  width: 100%;
 }
 
-.header {
-	display:flex;
-	justify-content: center;
+.features {
+  margin-bottom: 30px;
+  width: 93%;
+  display: flex;
+  align-items: flex-start;
+  flex-direction: column;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+/* INFOBOXES */
+
+.infocontainer {
+  display: flex;
+  flex-wrap: wrap;
 	flex-direction: column;
-	align-items: center;
-}
-
-#started a {
-	text-decoration: none;
-	color: black;
-	border: 1px solid black;
-	padding-top: 5px;
-	padding-bottom: 5px;
-	padding-left: 40px;
-	padding-right: 40px;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-
-#started a:hover {
-	color: white;
-	background-color: black;
-	border: 1px solid white;
-	-moz-transition: all 0.3s ease-in-out;
-	-o-transition: all 0.3s ease-in-out;
-	-ms-transition: all 0.3s ease-in-out;
-	transition: all 0.3s ease-in-out;
-}
-
-/* CONTENT */
-
-.info {
-	display: flex;
-	justify-content: space-between;
-}
-
-.feat-about {
-	width: 90%;
-	margin: 10px;
-	margin-bottom: 50px;
-}
-
-.serv-prod-vis {
-	width: 30%;
-	margin: 10px;
-	margin-top: 50px;
+  justify-content: space-around;
+  align-items: space-between;
 	margin-bottom: 30px;
 }
 
-#mid-page {
-	width: 100%;
+.infobox1 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  padding: 20px;
+	display: flex;
+	text-align: left;
+	flex-direction: column-reverse;
+	align-items: flex-Start;
+	justify-content: space-around;
+	background-color: #F4F3F4;
+  border: 1px solid black;
+	border-radius: 5px;
 }
 
-/* COPYRIGHT */
+.infobox2 {
+  width: 100%;
+  height: auto;
+  margin-bottom: 10px;
+  padding: 20px;
+	display: flex;
+	text-align: right;
+	flex-direction: column-reverse;
+	align-items: flex-end;
+	background-color: #F4F3F4;
+	border: 1px solid black;
+	border-radius: 5px;
+}
 
-#copyright {
-	font-size: 14px;
-	text-align: center;
-	margin-top: 20px;
-	margin-bottom: 20px;
-	font-weight: bold;
+/* BOTTOM */
+
+.bottomcontainer {
+  display: flex;
+	flex-direction: row-reverse;
+  justify-content: space-between;
+  margin-bottom: 100px;
+  width: 93%;
+  margin-left: 15px;
+  margin-right: 20px;
+}
+
+.bottombox {
+  width: 45%;
 }
